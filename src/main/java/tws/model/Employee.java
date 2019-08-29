@@ -1,9 +1,13 @@
-package java_persistence_practice_mybatis;
+package tws.model;
 
 public class Employee {
-	private int ID;
+	private int id;
 	private String name;
 	private int age;
+	public int getId() {
+		return id;
+	}
+	
 	
 	
 	
@@ -11,17 +15,24 @@ public class Employee {
 	public Employee() {
 		super();
 	}
-	public Employee(int iD, String name, int age) {
+
+
+
+
+
+	public Employee(int id, String name, int age) {
 		super();
-		ID = iD;
+		this.id = id;
 		this.name = name;
 		this.age = age;
 	}
-	public int getID() {
-		return ID;
-	}
-	public void setID(int iD) {
-		ID = iD;
+
+
+
+
+
+	public void setId(int id) {
+		this.id = id;
 	}
 	public String getName() {
 		return name;
@@ -36,5 +47,7 @@ public class Employee {
 		this.age = age;
 	}
 	
+	
+
 	
 }
